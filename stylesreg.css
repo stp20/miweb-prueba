@@ -1,0 +1,82 @@
+
+        body {
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .registro-container {
+            background: rgba(255,255,255,0.92);
+            padding: 2rem 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+            max-width: 350px;
+            width: 100%;
+        }
+        .registro-container h2 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 1.1rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.3rem;
+            color: #444;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 0.6rem;
+            border: 1px solid #bbb;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .captcha-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.2rem;
+        }
+        .captcha-img {
+            background: #e0e0e0;
+            color: #333;
+            font-weight: bold;
+            font-size: 1.1rem;
+            padding: 0.5rem 1.2rem;
+            border-radius: 5px;
+            margin-right: 0.7rem;
+            letter-spacing: 2px;
+            user-select: none;
+        }
+        .btn {
+            width: 100%;
+            padding: 0.7rem;
+            background: #e92525;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .btn:hover {
+            background: #f57c00;
+        }
+        .login-link {
+            display: block;
+            text-align: center;
+            margin-top: 1.2rem;
+            color: #1976d2;
+            text-decoration: none;
+            font-size: 0.98rem;
+        }
+        .login-link:hover {
+            text-decoration: underline;
+        }
