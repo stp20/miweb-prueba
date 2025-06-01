@@ -15,30 +15,33 @@
             justify-content: space-between;
             padding: 0 30px;
         }
+
+
         .logo {
             display: flex;
             align-items: center;
             font-size: 1.5em;
             font-weight: bold;
         }
-        .logo i { margin-right: 10px; color: #e53935; }
+
+        .logo i {
+            margin-right: 10px;
+            color: #e53935;
+        }
+
         .nav-links {
             display: flex;
             gap: 25px;
             align-items: center;
         }
+
         .nav-links a {
             color: #fff;
             text-decoration: none;
             font-size: 1em;
             transition: color 0.2s;
         }
-        .nav-links a:hover { color: #e53935; }
-        .cart {
-            position: relative;
-            font-size: 1.3em;
-            cursor: pointer;
-        }
+
         .cart-count {
             position: absolute;
             top: -8px;
@@ -49,6 +52,7 @@
             padding: 2px 7px;
             font-size: 0.8em;
         }
+
         .container {
             max-width: 1200px;
             margin: 40px auto;
@@ -56,10 +60,11 @@
             grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
             gap: 30px;
         }
+
         .car-card {
             background: #fff;
             border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
             padding: 20px;
             display: flex;
             flex-direction: column;
