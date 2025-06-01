@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Nosotros - Agencia de Autos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesnosotros.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <i class="fa-solid fa-car-side"></i> AutoShop
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="loginins.html">Iniciar Sesión</a>
+            <a href="registrarse.html">Registrarse</a>
+            <a href="nosotros.html">Nosotros</a>
+            <div class="cart" id="cartIcon">
+                <i class="fa-solid fa-shopping-cart"></i>
+                <span class="cart-count" id="cartCount">0</span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="info">
+            <h1>¿Quiénes Somos?</h1>
+            <p>
+                Somos una agencia de autos comprometida con ofrecerte la mejor experiencia en la compra y venta de
+                vehículos. Nuestro equipo está formado por profesionales apasionados por el mundo automotriz, siempre
+                dispuestos a asesorarte y ayudarte a encontrar el auto ideal para ti.
+            </p>
+            <p>
+                Contamos con una amplia variedad de autos nuevos y seminuevos de las mejores marcas, garantizando
+                calidad, seguridad y confianza en cada una de nuestras unidades. Nos esforzamos por mantenernos a la
+                vanguardia en tendencias y tecnología automotriz.
+            </p>
+            <p>
+                Nuestra misión es brindarte un servicio personalizado, transparente y eficiente, para que tu experiencia
+                con nosotros sea siempre satisfactoria. ¡Visítanos y descubre por qué somos tu mejor opción en autos!
+            </p>
+            <p><a href="index.html">☺ Visitanos ☺</a></p>
+        </div>
+        <div class="carousel-container">
+            <div class="carousel" id="carousel">
+                <img src="img/toyotaA3.png" alt="Agencia de autos 1" class="active">
+                <img src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=600&q=80"
+                    alt="Agencia de autos 2">
+                <img src="https://images.unsplash.com/photo-1461632830798-3adb3034e4c8?auto=format&fit=crop&w=600&q=80"
+                    alt="Agencia de autos 3">
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-icons">
+            <a href="https://www.facebook.com/?locale=es_LA"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/?lang=es"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div>
+            &copy; 2024 AutoShop. Todos los derechos reservados.
+        </div>
+    </footer>
+</body>
+<!-- carrusel de imagenes automatico 5 seg -->
+<script>
+    const images = document.querySelectorAll('#carousel img');
+    let current = 0;
+
+    function showSlide(index) {
+        images.forEach((img, i) => {
+            img.classList.toggle('active', i === index);
+        });
+    }
+
+    function moveSlide(step) {
+        current = (current + step + images.length) % images.length;
+        showSlide(current);
+    }
+    setInterval(() => moveSlide(1), 5000);
+</script>
+
+</html>
