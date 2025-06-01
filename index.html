@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>Tienda de Autos</title>
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <nav>
         <div class="logo">
@@ -30,7 +32,7 @@
             <!-- Auto 1 -->
             <div class="car-card">
                 <div data-index="0">
-                    <img src="img/toyotal1.png" alt="Auto 1"  width="300px" height="200px">
+                    <img src="img/toyotal1.png" alt="Auto 1" width="300px" height="200px">
                 </div>
                 <div class="car-desc">Toyota Corolla 2022</div>
                 <div class="car-price">$18,000 USD</div>
@@ -96,4 +98,20 @@
     </footer>
 
 </body>
-</style></html>
+
+<script>
+    const cartCount = document.getElementById('cartCount');
+    const addCartButtons = document.querySelectorAll('.add-cart-btn');
+
+    addCartButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            let count = parseInt(cartCount.textContent);
+            count++;
+            cartCount.textContent = count;
+        });
+    });
+</script>
+
+</style>
+
+</html>
